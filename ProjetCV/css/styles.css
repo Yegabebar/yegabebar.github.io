@@ -28,14 +28,14 @@ body{
 }
 
 
-section{
+article{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-article{
+section{
     margin: 20px;
     display: flex;
     margin: 10;
@@ -62,18 +62,20 @@ th, td {
     padding: 8px;
   }
 
-article h2{
+section h2{
     text-align: center;
 }
+
 figure{
     text-align: center;
 }
+
 figure img{
     border-radius: 100%;
 }
 
 
 
-.articleContent{
+.sectionContent{
     display: inline;
 }
