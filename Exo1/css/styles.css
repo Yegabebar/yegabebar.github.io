@@ -1,0 +1,35 @@
+body{
+    background-color:pink;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+.card p{
+    text-align: center;
+}
+.clearFix{
+    overflow: auto;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+}
+.centered{
+    text-align: center;
+}
+.white{
+    color: white;
+}
+
+.right{
+    text-align: right;
+}
+
+.italic{
+    font-style: italic;
+}
+
+
+
