@@ -11,16 +11,16 @@
         <H1>Développeur JAVA Fullstack</H1>
     </header>
     <main>
-        <article>
-            <header hidden>
-                Description
+        <article id=desc>
+            <header>
+                <h2 hidden>Description</h2>
             </header>
             <section>
                 <header>
                     <h2>Mathieu barbé-gayet</h2>
                     <h3>Féru de scripting et d'automatisation, à la recherche d'alternance en développement application / web en région parisienne</h3>
                 </header>
-                <div>
+                <div id=card>
                     <table>
                         <tr>
                             <td>Situation</td>
@@ -30,16 +30,23 @@
                             <td>Localisation</td>
                             <td>Levallois-Perret, Île-de-France, France</td>
                         </tr>
+                        <tr>
+                            <td>Localisation</td>
+                            <td>Levallois-Perret, Île-de-France, France</td>
+                        </tr>
+                        <tr>
+                            <td>Localisation</td>
+                            <td>Levallois-Perret, Île-de-France, France</td>
+                        </tr>
                     </table>
+                    <figure>
+                        <img src="./img/me.png" alt="Photo de Mathieu">
+                        <figcaption>
+                            <p>Photo non contractuelle</p>
+                        </figcaption>
+                    </figure>
                 </div>
-                <figure>
-                    <img src="./img/me.png" alt="Photo de Mathieu">
-                    <figcaption>
-                        <p>Photo non contractuelle</p>
-                    </figcaption>
-                </figure>
             </section>
-            
         </article>
         <article>
             <header>
@@ -68,13 +75,16 @@
                 </ul>
             </section>
         </article>
-        <article>
+        <article class="timeline">
             <header>
                 <h2 class=subcat>Mon parcours</h2>
             </header>
-            <section>
-                <div class = sectionContent>
-                    <h2>2015-Aujourd'hui</h2>
+            <section class=timeline-block>
+                <div class=drawline>
+                    <div class=marker></div>
+                </div>
+                <div class="timeline-content">
+                    <h2>2015 - Aujourd'hui</h2>
                     <h3>Bac+2 Développeur informatique - Reconversion professionnelle</h3>
                     <p>
                         Coding Factory 8 avenue de la Porte de Champerret – 75017 Paris / D'octobre
@@ -94,10 +104,12 @@
                     </p>
                 </div>
             </section>
-            <section>
-
-                <div class = sectionContent>
-                    <h2>2011-2014</h2>
+            <section class=timeline-block>
+                <div class=drawline>
+                    <div class=marker></div>
+                </div>
+                <div class="timeline-content">
+                    <h2>2011 - 2014</h2>
                     <h3>Administrateur réseaux (Apprentissage)</h3>
                     <p>
                         Thales Global Services Le Haillan (33) / De septembre 2011 à août 2014
@@ -118,11 +130,13 @@
                         Option SISR (Systèmes et réseaux)
                     </p>
                 </div>
-                
             </section>
-            <section>
-                <div class = sectionContent>
-                    <h2>Les débuts</h2>
+            <section class=timeline-block>
+                <div class=drawline>
+                    <div class=marker></div>
+                </div>
+                <div class="timeline-content">
+                    <h2>2010 - 2011</h2>
                     <h3>Technicien de maintenance informatique (Stage)</h3>
                     <p>
                         Arobaz Informatique La Rochelle (17) / De 2010 à 2011
