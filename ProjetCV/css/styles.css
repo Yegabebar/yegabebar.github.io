@@ -12,46 +12,41 @@ body {
     background-color: rgb(179, 180, 190);
 }
 
-footer {
-    color: white;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.9);
+a {
+    text-decoration: none;
+    color: #666;
 }
+/*th, td {
+    padding: 8px;
+}*/
 
-figure {
-    text-align: center;
-}
-
-figure img {
+.pic img {
     border-radius: 50%;
-    width: 200px;  
+    /*width: 100%;*/  
     height: auto;  
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-ul.skills {
+.skills {
+    background-color: rgb(49, 49, 49);
+    color: #F5F7FA;
     list-style-type: none;
     display: flex;
     justify-content: center;
 }
 
-ul.skills li {
-    margin: 8px;
+.skills ul {
+    display:flex;
 }
-
-th, td {
-    padding: 8px;
+.skills ul li{
+    list-style-type: none;
+    margin: 8px;
 }
 
 #desc {
     background-color: rgb(81, 81, 119);
     display: flex;
     flex-direction: column;
-
+    color:#CCD1D9;
     left: 0;
     right: 0;
     padding-left: 10%;
@@ -64,7 +59,24 @@ th, td {
     justify-content: center;
 }
 
+#card ul p{
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.logos a img {
+    width: 80%;
+}
+
 .subcat {
+    color: rgb(56, 56, 56);
     text-align: center;
 }
 
@@ -82,10 +94,12 @@ th, td {
     text-align: center;
 }
 
-.timeline{
+.timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1em;
+    padding-bottom: 4em;
 }
 
 .timeline-block {
@@ -97,66 +111,63 @@ th, td {
     display: -moz-box;
     flex-direction: row-reverse;
     clear: both;
- }
+}
  
-
 .drawline {
-    width: 20%;
+    width: 5%;
     padding: 50px 0;
     position: relative;
- }
- 
- .drawline:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 60%;
-    margin-left: -1px;
-    width: 2px;
-    height: 100%;
-    background: #CCD1D9;
-    z-index: 1
- }
-
- .marker {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    border: 2px solid #F5F7FA;
-    background: #c02680;
-    margin-top: 20px;
-    margin-left: 54%;
-    z-index: 9999
- }
- 
- .timeline-content {
-    width: 95%;
-    padding: 0 15px;
-    margin-bottom: 1em;
-    color: #666
- }
- .timeline-content:hover{
-     background-color: rgb(177, 177, 177);  
- }
- .timeline-content:hover ~ .drawline .marker{
-    background: #ff5100;
-       
 }
  
-.blankspace{
-    padding:50px;
+.drawline:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 8px;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+
 }
 
- @media screen and (max-width: 768px) {
-    .drawline:before {
-       left: 8px;
-       width: 2px;
-    }
-    .timeline-block {
-       width: 100%;
-       margin-bottom: 30px;
-    }
+.marker {
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #c02680;
+   margin-top: 20px;
+}
  
- }
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   margin-bottom: 1em;
+   color: #666
+}
+.timeline-content:hover{
+    background-color: rgb(177, 177, 177);  
+}
+.timeline-content:hover a{
+    color:rgb(56, 56, 56);  
+}
+.timeline-content:hover ~ .drawline .marker{
+   background: #ff5100;
+}
+ 
+
+
+@media screen and (max-width: 768px) {
+   .drawline:before {
+      left: 8px;
+      width: 2px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+
+}
  
