@@ -1,3 +1,6 @@
+/*----------------------------------------- 
+----- Desktop portrait display mode
+-----------------------------------------*/
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -62,7 +65,7 @@ a {
     justify-content: center;
 }
 
-#card ul p{
+#card ul p {
     padding-top: 0em;
     padding-bottom: 0em;
 }
@@ -91,8 +94,6 @@ a {
     padding: 4em;
     left: 0;
     right: 0;
-    z-index: 0;
-    font-size: 1.5em;
     color:white;
     text-align: center;
 }
@@ -164,9 +165,13 @@ a {
     font-size: 3em;
 }
 
+/*----------------------------------------- 
+---------- Handheld devices 
+-----------------------------------------*/
+
 @media all and (max-width: 812px){
     .banner {
-        font-size: 1em;
+        font-size: 80%;
         padding: 4em;
     }
 
@@ -182,10 +187,12 @@ a {
     #card {
         flex-direction: column;
     }
+
     figure.pic {
         display: flex;
         justify-content: center;
     }
+
     .pic {
         order: 0;
     }
@@ -213,38 +220,28 @@ a {
 
 }
 
+/*----------------------------------------- 
+-------------- Desktop mode 
+-----------------------------------------*/
+
 @media screen and (min-width: 1081px){
-    :root{
+    :root {
         background-image: url('../img/bg2edited.jpg');
     }
-    body{
+
+    body {
         margin-left: 20em;
         margin-right: 20em;
     }
-    .banner{
-        background-color: rgb(49, 49, 49);
-        background-image: unset;
-    }
-    .timeline-content:hover {
-        background-color: rgb(177, 177, 177);  
-    }
-    .timeline-content:hover a {
-        color:rgb(56, 56, 56);  
-    }
-    .timeline-content:hover ~ .drawline .marker {
-       background: #ff5100;
-    }
+
     main {
         display: flex;
     }
-    #card {
-        flex-direction: column;
-    }
-    .pic {
-        order: 0;
-    }
-    #text {
-        order: 1;
+
+    .banner {
+        min-width: 952px;
+        background-color: rgb(49, 49, 49);
+        background-image: unset;
     }
 
     #desc {
@@ -252,8 +249,40 @@ a {
         padding-right:1%;
     }
 
+    #desc section header h2 {
+        text-align: center;
+    }
+
+    #card {
+        flex-direction: column;
+    }
+
+    .pic {
+        order: 0;
+    }
+
+    figure.pic {
+        display: flex;
+        justify-content: center;
+    }
+    #text {
+        order: 1;
+    }
+
     .logos {
         justify-content: center;
+    }
+
+    .timeline-content:hover {
+        background-color: rgb(177, 177, 177);  
+    }
+
+    .timeline-content:hover a {
+        color:rgb(56, 56, 56);  
+    }
+
+    .timeline-content:hover ~ .drawline .marker {
+       background: #ff5100;
     }
 
 }
