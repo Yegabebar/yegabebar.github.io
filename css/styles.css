@@ -19,11 +19,6 @@ a {
     color: #666;
 }
 
-.pic img {
-    border-radius: 50%;
-    height: auto;  
-}
-
 .skills {
     background-color: rgb(37, 37, 37);
     color: #F5F7FA;
@@ -63,6 +58,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.pic{
+    width: 75%;
+    height:  75%;  
+    border-radius: 50%;
 }
 
 #card ul p {
@@ -152,6 +153,14 @@ a {
    color: #666
 }
 
+.set-margin-below{
+    display: inline;
+    margin-bottom: 0.1em;
+}
+.set-margin-top{
+    margin-top: 0.1em;
+}
+
 .back-to-top {
     display: flex;
     justify-content: center;
@@ -197,7 +206,9 @@ a {
         order: 0;
     }
 
-    .pic img {
+    .pic{
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 50%;
         width: 60%;
         height: auto;  
@@ -234,17 +245,20 @@ a {
         margin-right: 20em;
     }
 
-    main {
-        display: flex;
-    }
-
     .banner {
-        min-width: 952px;
+        width: 100%;
         background-color: rgb(49, 49, 49);
         background-image: unset;
     }
 
+    main {
+        width: 100%;
+        display: flex;
+    }
+
     #desc {
+        max-width: 40%;
+        min-width: 40%;
         padding-left:1%;
         padding-right:1%;
     }
@@ -255,16 +269,20 @@ a {
 
     #card {
         flex-direction: column;
+        justify-content: center;
     }
 
-    .pic {
-        order: 0;
-    }
-
-    figure.pic {
+    .logos a{
         display: flex;
         justify-content: center;
     }
+
+    .pic{
+        order: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     #text {
         order: 1;
     }
@@ -273,8 +291,12 @@ a {
         justify-content: center;
     }
 
+    #stack{
+        width: 60%;
+    }
+
     .timeline-content:hover {
-        background-color: rgb(177, 177, 177);  
+        background-color: rgb(172, 174, 190);  
     }
 
     .timeline-content:hover a {
