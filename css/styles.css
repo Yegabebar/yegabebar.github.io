@@ -26,19 +26,15 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.skills header {
-    text-align: center;
-    padding-left: 1em;
+    padding-left: 0.8em ;
+    padding-right: 0.4em ;
 }
 
 .skills ul {
     display:flex;
-    margin-right: 0.4em;
+    flex-wrap: wrap;
 }
-
-.skills ul li{
+.skills ul li {
     list-style-type: none;
     margin: 0.4em;
 }
@@ -60,9 +56,8 @@ a {
     justify-content: center;
 }
 
-.pic{
-    width: 75%;
-    height:  75%;  
+.pic {
+    height: 75%;  
     border-radius: 50%;
 }
 
@@ -153,11 +148,22 @@ a {
    color: #666
 }
 
-.set-margin-below{
+.italic {
+    font-style: italic;
+}
+
+.degree {
+    background-color: #a2a2ac;
+    padding:1.5%;
+    margin-bottom:1%;
+    border-radius: 0.5em;
+}
+
+.degree .set-margin-below{
     display: inline;
     margin-bottom: 0.1em;
 }
-.set-margin-top{
+.degree .set-margin-top{
     margin-top: 0.1em;
 }
 
@@ -197,16 +203,8 @@ a {
         flex-direction: column;
     }
 
-    figure.pic {
-        display: flex;
-        justify-content: center;
-    }
-
-    .pic {
-        order: 0;
-    }
-
     .pic{
+        order: 0;
         margin-left: auto;
         margin-right: auto;
         border-radius: 50%;
@@ -257,8 +255,7 @@ a {
     }
 
     #desc {
-        max-width: 40%;
-        min-width: 40%;
+        width: 40%;
         padding-left:1%;
         padding-right:1%;
     }
@@ -279,6 +276,7 @@ a {
 
     .pic{
         order: 0;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -293,6 +291,10 @@ a {
 
     #stack{
         width: 60%;
+    }
+    
+    .skills ul li{
+        list-style-type: none;
     }
 
     .timeline-content:hover {
