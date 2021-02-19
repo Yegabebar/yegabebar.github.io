@@ -16,7 +16,22 @@ body {
 
 a {
     text-decoration: none;
-    color: #666;
+    color: rgb(32, 32, 32);
+}
+
+#description {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-style: italic;
+    color: rgb(66, 66, 66);
+    background-color: rgb(179, 180, 190);
+    margin: 0;
+
+}
+#description hr {
+    margin-top: 4em;
 }
 
 .skills {
@@ -33,6 +48,7 @@ a {
 .skills ul {
     display:flex;
     flex-wrap: wrap;
+    padding-left: 0.8em ;
 }
 .skills ul li {
     list-style-type: none;
@@ -46,8 +62,9 @@ a {
     color:#CCD1D9;
     left: 0;
     right: 0;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 1.5em;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 #card {
@@ -56,14 +73,15 @@ a {
     justify-content: center;
 }
 
-.pic {
-    height: 75%;  
-    border-radius: 50%;
-}
-
 #card ul p {
     padding-top: 0em;
     padding-bottom: 0em;
+}
+
+.pic {
+    margin-top: 1em;
+    height: 75%;  
+    border-radius: 50%;
 }
 
 .logos {
@@ -90,7 +108,7 @@ a {
     padding: 4em;
     left: 0;
     right: 0;
-    color:white;
+    color:#CCD1D9;
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
     text-align: center;
 }
@@ -177,8 +195,17 @@ a {
     border-radius: 0.5em;
 }
 
-.wip {
+.label {
     display: inline-block;
+    min-width: 5em;
+    text-align: center;
+    color: #ffffff;
+    padding:1%;
+    margin-right: 1.5%;
+    border-radius: 0.5em;
+}
+
+.wip {
     background: repeating-linear-gradient(
         -45deg,
         #b99400,
@@ -186,10 +213,30 @@ a {
         #cca300 10px,
         #cca300 20px
     );
-    color: #ffffff;
-    padding:1%;
-    margin-right: 1.5%;
+}
+
+.coming-soon {
+    background: repeating-linear-gradient(
+        -45deg,
+        #5838a5,
+        #5838a5, 10px,
+        #8951c8 10px,
+        #8951c8 20px
+    );
+}
+
+.note {
+    background-color: rgb(106, 108, 122);
     border-radius: 0.5em;
+    padding:1%;
+    color: #CCD1D9;
+}
+
+.note td {
+    padding-bottom: 0%;
+    padding-left: 1%;
+    min-width: 5em;
+
 }
 
 .set-margin-below {
@@ -268,18 +315,19 @@ a {
 
 @media screen and (min-width: 1081px){
     :root {
-        background-image: url('../img/bg2edited.jpg');
+        background-color: rgb(87, 87, 87);
     }
 
     body {
         margin-left: 20em;
         margin-right: 20em;
+        box-shadow: 0px 0px 100px 20px #3a3a3a;
     }
 
     .banner {
         width: 100%;
         background-color: rgb(49, 49, 49);
-        background-image: unset;
+
     }
 
     main {
@@ -291,6 +339,7 @@ a {
         width: 40%;
         padding-left:1%;
         padding-right:1%;
+        border-right:1px solid rgb(66, 66, 66);
     }
 
     #desc section header h2 {
@@ -300,6 +349,7 @@ a {
     #card {
         flex-direction: column;
         justify-content: center;
+        padding-left: 1em;
     }
 
     .logos a{
